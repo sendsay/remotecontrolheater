@@ -53,7 +53,7 @@ struct Config {
     char ssid[50] = "SUERTEKSA CNC";
     char password[50] = "61347400";
 #endif
-    char ssidAP[50] = "Aquarium-AP";
+    char ssidAP[50] = "ESP-AP";
     char passwordAP[50] = "" ;
     float timeZone = 2.0;
     char ntpServerName[50] = "ntp3.time.in.ua";
