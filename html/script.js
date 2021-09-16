@@ -21,6 +21,19 @@ function getData() {
             if (json.summertime == 1) {document.getElementById("summerTime").checked = true; }
             document.getElementById("ntpServerName").value = json.ntpServerName;
 
+            //mqtt
+            document.getElementById("mqttserver").value = json.mqttserver;
+            document.getElementById("mqttport").value = json.mqttport;
+            document.getElementById("mqttUserName").value = json.mqttUserName;
+            document.getElementById("mqttpass").value = json.mqttpass;
+            document.getElementById("mqttname").value = json.mqttname;
+            document.getElementById("mqttsubinform").value = json.mqttsubinform;
+            document.getElementById("mqttsub").value = json.mqttsub;
+            document.getElementById("mqttpubtemp").value = json.mqttpubtemp;
+            document.getElementById("mqttpubtempUl").value = json.mqttpubtempUl;
+            document.getElementById("mqttpubhum").value = json.mqttpubhum;
+            document.getElementById("mqttpubpress").value = json.mqttpubpress;           
+
             console.log(str);
         }
     }
