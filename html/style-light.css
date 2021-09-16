@@ -67,3 +67,7 @@ input:checked[type="checkbox"]:after {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+h2 {
+    color: whitesmoke;
+}

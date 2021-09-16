@@ -41,7 +41,7 @@ void style();                           // web style css
 void styleaqua();                       // web style aqua css
 void stylelight();                      // web style light css
 void styleparams();                     // web style params css
-void aquapng();                         // web aqua png
+void firepng();                         // web fire png
 void lightpng();                        // web light png
 void parampng();                        // web param png
 void printTime();                       // print time for debug
@@ -107,8 +107,8 @@ void setup() {
     server.on("/style-light.css", stylelight);
     server.on("style-params.css", styleparams);
     server.on("/style-params.css", styleparams);
-    server.on("aqua.png", aquapng);
-    server.on("/aqua.png", aquapng);
+    server.on("fire.png", firepng);
+    server.on("/fire.png", firepng);
     server.on("light.png", lightpng);
     server.on("/light.png", lightpng);
     server.on("params.png", parampng);
@@ -315,11 +315,12 @@ void styleparams() {
     DEBUG("load params style css");
 }
 
-void aquapng() {
-    File file = SPIFFS.open("/aqua.png", "r");
+void firepng() {
+    File file = SPIFFS.open("/fire.png", "r");
     size_t sent = server.streamFile(file, "image/png");
-    DEBUG("load aqua png");
+    DEBUG("load fire png");
 }
+
 void lightpng() {
     File file = SPIFFS.open("/light.png", "r");
     size_t sent = server.streamFile(file, "image/png");
